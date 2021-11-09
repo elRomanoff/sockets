@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Calculadora",
+    "price": "40",
+    "thumbnail": "calculadora.jpg",
+    "id": 1
+  },
+  {
+    "title": "Playstation 3",
+    "price": "300",
+    "thumbnail": "plei3.jpg",
+    "id": "2"
+  },
+  {
+    "title": "figura de king kong",
+    "price": "200",
+    "thumbnail": "fotito",
+    "id": 3
+  }
+]
