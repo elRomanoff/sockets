@@ -31,12 +31,19 @@ class Contenedor {
         }
         catch{ err =>{console.log(err)}}
     }
-    async deleteById(num) {
-        
+    async deleteById(id) {
+        try{
+            await this.connection.from(this.table).del("*").where("id", "=", id)
+        }
+        catch{
+            return "The element does not exist"
+        }
     }
+    
+    
     async deleteAll() {
         try {
-            await fs.promises.writeFile(`./${this.file}`, "")
+            await this.connection.from(this.talbe).del(*)
         }
         catch (err) {
             console.log(err)
