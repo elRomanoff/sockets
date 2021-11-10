@@ -43,7 +43,14 @@ class Contenedor {
             err =>{ console.log(err) }
         }
     }
-    
+    async update(id, objUpdate){
+        try{
+            await this.connection.from(this.table).where("id", "=", id).update(objUpdate)
+        }
+        catch{
+            (err) =>{console.log(err)}
+        }
+    }    
 }
 
 
